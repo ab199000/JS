@@ -5,7 +5,6 @@ function filter(mass,property,meaning){
             if (mass[i][prop] == meaning && prop == property){
                 mass_otvet.push(mass[i])
                 console.log(mass_otvet)
-                break;
             }
             
         }
