@@ -1,0 +1,26 @@
+.as{
+    background-color: red;
+    width: 130px;
+    height: 130px;
+}
+.qw{
+    width: 60px;
+    height: 60px;
+}
+.sqr6{
+    background-color: red;
+    width: 130px;
+    height: 130px;
+}
+.sqr7{
+    background-color: red;
+    width: 130px;
+    height: 130px;
+}
+.sqr8{
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    background-color: red;
+    margin-top: 15px;
+}
