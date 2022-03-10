@@ -147,8 +147,13 @@ but_um.addEventListener("click", function() {
 })
 but_delet.addEventListener("click", function() {
     place.value = ""
+    znach = ""
 
 })
 but_otv.addEventListener("click", function() {
     place.value = eval(znach)
+    znach = eval(znach)
 })
+
+
+
