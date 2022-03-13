@@ -1,0 +1,23 @@
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    background-color: rgb(180, 175, 175);
+    justify-content: center;
+    padding: 20px;
+}
+h2{
+    margin: auto;
+    margin-bottom: 10px;
+    color: rgb(80, 78, 75);
+}
+.input,.text,.on{
+    margin-bottom: 10px;
+    background-color: rgb(150, 150, 150);
+    color: aliceblue;
+}
+button:hover{
+    background-color: rgb(124, 124, 124);
+}
