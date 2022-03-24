@@ -1,0 +1,51 @@
+.container{
+    background-color: #78A5A3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    
+}
+h1{
+    color: #444C5C;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+form{
+
+    text-align: center;
+}
+ul{
+    padding-left: 0px;
+}
+li{
+    margin-top: 20px;
+    background-color: #CE5A57;
+    width: 700px;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    text-overflow: ellipsis;
+    padding: 5px 5px 5px 5px;
+    color: #444C5C;
+    font-size: 20px;
+}
+.buttons_block{
+    margin-left: auto;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.but{
+    width: 70px;
+    height: 30px;
+}
+input{
+    width: 580px;
+}
+.red_But{
+    background-color: rgb(77, 218, 77);
+}
