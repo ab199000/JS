@@ -1,7 +1,7 @@
 let container1 = document.querySelector(".containerMy")
 let container2 = document.querySelector(".containerDad")
 let container3 = document.querySelector(".containerMom")
-
+let mass = []
 // let mass = [
 //     {name: "asd",
 //     done: true
@@ -42,6 +42,7 @@ let container3 = document.querySelector(".containerMom")
         but.addEventListener("click", ()=>{
             if (input.value){
                 let li =createTodoItem(input.value).li
+
             input.value = ''
             but.disabled = "disabled"
             let ul = document.querySelector(".ul")
@@ -88,6 +89,16 @@ let container3 = document.querySelector(".containerMom")
         
         
         li.textContent = input
+
+        mass.push({
+            name: input,
+            done: true,
+        })
+
+        
+    localStorage.setItem("1", JSON.stringify(mass))
+    console.log(mass)
+    console.log(localStorage.getItem("1"))
         
         btDo.textContent = "Готово"
         btDelet.textContent = "Удалить"
@@ -139,19 +150,48 @@ function createTodoApp(container,title){
     // })
 
 
-        for(let i = 0; i< mass.length; i++){
+        // for(let i = 0; i< mass.length; i++){
 
-        let li = createTodoItem(mass[i].name).li
-        spisok.append(li)
-        if (mass[i].done){
-            li.classList.toggle("red_But")
-        }
+        // let li = createTodoItem(mass[i].name).li
+        // spisok.append(li)
+        // if (mass[i].done){
+        //     li.classList.toggle("red_But")
+        // }
             
+        // }
+
+        // mass.push(JSON.parse(localStorage.getItem("1")))
+
+        // for (let i = 0; i < JSON.parse(localStorage.getItem("1")).length;i++){
+        for (let i = 0; i < 5;i++){
+            mass.push(JSON.parse(localStorage.getItem("1"))[i])
         }
+
+        // localStorage.clear("1")
+        
+
+
+        // for (leti = 0; i < JSON.parse(localStorage.getItem("1")).length;i++){
+        //         mass.push(JSON.parse(localStorage.getItem("1"))[i])
+                
+        //     }
 
     
 
     container.append(titul, inputForm.form, spisok)
+
+    
+    
+    for(let i = 0; i< mass.length; i++){
+            
+            let li = createTodoItem(mass[i].name).li
+            spisok.append(li)
+            if (mass[i].done){
+                li.classList.toggle("red_But")
+            }
+                
+            }
+            
 
 
 }
