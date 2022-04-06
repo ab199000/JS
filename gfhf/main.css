@@ -1,0 +1,12 @@
+.title{
+    text-align: center;
+}
+.container{
+    display: grid;
+    justify-items: center;
+    /* max-width: m-content; */
+}
+.line{
+    display: flex;
+    gap: 30px;
+}
