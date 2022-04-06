@@ -1,14 +1,8 @@
-import {} from "./modul/general modul.js"
+import {createTodoApp} from "./modul/createTodoApp.js"
+
 
 
 let mass = []
 
-function createTodoApp(container,title,key){
-    const titul = createAppTitle(title)
-    const inputForm = createTodoItemForm(key)
-    const spisok = createTodoList()
-    container.append(titul, inputForm.form, spisok) 
-    inputStrLocal(spisok,key)
-    
-}
+window.mass = mass
 window.createTodoApp = createTodoApp

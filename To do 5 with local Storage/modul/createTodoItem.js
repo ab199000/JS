@@ -1,4 +1,4 @@
-import {changeItemDone} from "./changeItemDone"
+import {changeItemDone} from "./changeItemDone.js"
 export function createTodoItem(input, key){
     const li = document.createElement("li")
     const twoBt = document.createElement("div")
@@ -26,7 +26,7 @@ export function createTodoItem(input, key){
         let vopros = confirm("Вы уверены, что хотите удалить запись?")
         if (vopros){
             li.remove()
-            for(obj of mass){
+            for(let obj of mass){
                 if (obj.id === li.id){
                     mass.splice(mass.indexOf(obj),1)
                 }
