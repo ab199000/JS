@@ -1,0 +1,39 @@
+button{
+    color: #fff;
+    background: hsl(147, 56%, 38%);
+    height: 50px;
+    width: 50px;
+    margin: 7px;
+    font-weight: bold;
+    font-size: larger;
+}
+button:hover {
+    color: #fff;
+    background: rgb(48, 221, 71);
+    transition: 0.5s linear;
+}
+button:active {
+    color: #fff;
+    background: #333;
+}
+
+.pole{
+    min-width: max-content;
+    min-height: max-content;
+    width: min-content;
+    margin: 0 auto;
+}
+
+.container{
+    min-width: min-content;
+    min-height: min-content;
+}
+
+body{
+    text-align: center;
+    font-weight: bold;
+    margin: 0 auto;
+}
+h1{
+    background-color:aliceblue;
+}
